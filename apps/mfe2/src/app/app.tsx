@@ -1,7 +1,8 @@
 // Uncomment this line to use CSS modules
 // import styles from './app.module.css';
 import NxWelcome from './nx-welcome';
-import { Button, Card, Badge } from '@libs/components';
+import { Button, Card, Badge } from '@react-demo/components';
+import { formatCurrency, formatBytes, multiply } from '@react-demo/utils';
 
 import { Route, Routes, Link } from 'react-router-dom';
 
@@ -35,7 +36,7 @@ export function App() {
           path="/"
           element={
             <div>
-              <h2>MFE2 - Shared Library Components Demo</h2>
+              <h2>MFE2 - Shared Library Demo</h2>
               <Card
                 title="Advanced Components"
                 description="MFE2 using the same shared library"
@@ -54,6 +55,21 @@ export function App() {
                     style={{ marginLeft: '0.5rem' }}
                   />
                 </div>
+              </Card>
+              <br />
+              <Card
+                title="Formatting Utilities Demo"
+                description="Using shared utils from @libs/utils"
+              >
+                <p>
+                  <strong>Currency Format:</strong> {formatCurrency(1299.99)}
+                </p>
+                <p>
+                  <strong>Bytes Format:</strong> {formatBytes(1024 * 1024 * 5)}
+                </p>
+                <p>
+                  <strong>Math Utilities:</strong> 15 × 3 = {multiply(15, 3)}
+                </p>
               </Card>
               <br />
               <Link to="/page-2">Click here for page 2.</Link>

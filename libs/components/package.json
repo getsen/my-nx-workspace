@@ -1,0 +1,14 @@
+{
+  "name": "@react-demo/components",
+  "version": "2.0.0",
+  "description": "Shared UI components library",
+  "private": true,
+  "main": "index.ts",
+  "types": "index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./button": "./Button.tsx",
+    "./card": "./Card.tsx",
+    "./badge": "./Badge.tsx"
+  }
+}

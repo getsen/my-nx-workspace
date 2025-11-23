@@ -1,7 +1,8 @@
 // Uncomment this line to use CSS modules
 // import styles from './app.module.css';
 import NxWelcome from './nx-welcome';
-import { Button, Card, Badge } from '@libs/components';
+import { Button, Card, Badge } from '@react-demo/components';
+import { capitalize, formatDate, sum } from '@react-demo/utils';
 
 import { Route, Routes, Link } from 'react-router-dom';
 
@@ -35,7 +36,7 @@ export function App() {
           path="/"
           element={
             <div>
-              <h2>MFE1 - Shared Library Components Demo</h2>
+              <h2>MFE1 - Shared Library Demo</h2>
               <Card
                 title="Component Examples"
                 description="Using shared components from lib"
@@ -54,6 +55,22 @@ export function App() {
                     style={{ marginLeft: '0.5rem' }}
                   />
                 </div>
+              </Card>
+              <br />
+              <Card
+                title="Utility Functions Demo"
+                description="Using shared utils from @libs/utils"
+              >
+                <p>
+                  <strong>String Utilities:</strong> "{capitalize('hello')}"
+                </p>
+                <p>
+                  <strong>Date Formatting:</strong> {formatDate(new Date())}
+                </p>
+                <p>
+                  <strong>Math Utilities:</strong> Sum of [1,2,3,4,5] ={' '}
+                  {sum([1, 2, 3, 4, 5])}
+                </p>
               </Card>
               <br />
               <Link to="/page-2">Click here for page 2.</Link>

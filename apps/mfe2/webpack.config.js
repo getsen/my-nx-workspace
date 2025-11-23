@@ -53,6 +53,16 @@ module.exports = {
         react: { singleton: true, requiredVersion: false },
         'react-dom': { singleton: true, requiredVersion: false },
         'react-router-dom': { singleton: true, requiredVersion: false },
+        '@react-demo/components': {
+          singleton: true,
+          strictVersion: false,
+          requiredVersion: '2.0.0',
+        },
+        '@react-demo/utils': {
+          singleton: true,
+          strictVersion: false,
+          requiredVersion: '1.0.0',
+        },
       },
     }),
     new HtmlWebpackPlugin({

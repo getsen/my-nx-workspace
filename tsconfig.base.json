@@ -18,6 +18,8 @@
     "customConditions": ["development"],
     "baseUrl": ".",
     "paths": {
+      "@react-demo/components": ["libs/components"],
+      "@react-demo/utils": ["libs/utils"],
       "@libs/*": ["libs/*"]
     }
   }

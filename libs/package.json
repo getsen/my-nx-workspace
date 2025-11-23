@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Shared UI components library",
   "private": true,
+  "workspaces": [
+    "components",
+    "utils"
+  ],
   "main": "components/index.ts",
   "types": "components/index.ts",
   "exports": {
@@ -10,6 +14,10 @@
     "./components": "./components/index.ts",
     "./button": "./components/Button.tsx",
     "./card": "./components/Card.tsx",
-    "./badge": "./components/Badge.tsx"
+    "./badge": "./components/Badge.tsx",
+    "./utils": "./utils/index.ts",
+    "./utils/string": "./utils/string.ts",
+    "./utils/math": "./utils/math.ts",
+    "./utils/formatting": "./utils/formatting.ts"
   }
 }

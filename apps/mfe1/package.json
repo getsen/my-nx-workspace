@@ -6,5 +6,12 @@
     "dev": "webpack serve --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js --mode production",
     "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-demo/components": "2.0.0",
+    "@react-demo/utils": "1.0.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router-dom": "6.29.0"
   }
 }

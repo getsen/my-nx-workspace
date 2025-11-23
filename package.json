@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.28.4",
     "@module-federation/vite": "^1.9.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
@@ -72,6 +73,7 @@
   },
   "workspaces": [
     "apps/*",
+    "libs/*",
     "container"
   ]
 }

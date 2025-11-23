@@ -65,6 +65,16 @@ module.exports = {
           strictVersion: false,
           requiredVersion: false,
         },
+        '@react-demo/components': {
+          singleton: true,
+          strictVersion: false,
+          requiredVersion: '2.0.0',
+        },
+        '@react-demo/utils': {
+          singleton: true,
+          strictVersion: false,
+          requiredVersion: '1.0.0',
+        },
       },
     }),
     new HtmlWebpackPlugin({
