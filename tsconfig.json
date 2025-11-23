@@ -5,6 +5,24 @@
   "references": [
     {
       "path": "./apps/react-demo"
+    },
+    {
+      "path": "./mfe1-e2e"
+    },
+    {
+      "path": "./mfe1"
+    },
+    {
+      "path": "./mfe2-e2e"
+    },
+    {
+      "path": "./mfe2"
+    },
+    {
+      "path": "./container-e2e"
+    },
+    {
+      "path": "./container"
     }
   ]
 }

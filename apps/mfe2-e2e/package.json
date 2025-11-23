@@ -1,0 +1,10 @@
+{
+  "name": "@react-demo/mfe2-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@react-demo/mfe2"
+    ]
+  }
+}

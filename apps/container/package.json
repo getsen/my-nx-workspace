@@ -1,0 +1,16 @@
+{
+  "name": "@react-demo/container",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router-dom": "6.29.0"
+  },
+  "devDependencies": {}
+}
